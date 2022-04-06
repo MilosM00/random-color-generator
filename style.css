@@ -35,11 +35,8 @@ p{
 }
 
 .display-color{
-    padding-right: 30px;
-    font-size: 25px;
-    font-style: italic;
-    font-weight: bold;
-    cursor: default;
+    font-size: 20px;
+    padding: 10px;
 }
 
 .copy-color{
