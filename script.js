@@ -16,6 +16,13 @@ buttonNewColor.addEventListener(`click`, () =>{
     displayColor.value = randomColor();
 });
 
+buttonNewColor.addEventListener(`keypress`, (e) =>{
+    if(e.key === `Enter`){
+        colorBox.style.backgroundColor = randomColor();
+        displayColor.value = randomColor();
+    }
+});
+
 buttonCopyText.addEventListener(`click`, () =>{
     displayColor.select();
     document.execCommand(`copy`);
