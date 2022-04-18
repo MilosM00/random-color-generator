@@ -12,14 +12,12 @@ const randomNumbers = (min, max) => Math.floor(Math.random() * (max - min + 1) +
 const randomColor = () => `rgb(${randomNumbers(0, 255)}, ${randomNumbers(0, 255)}, ${randomNumbers(0, 255)})`;
 
 buttonNewColor.addEventListener(`click`, () =>{
-    colorBox.style.backgroundColor = randomColor();
-    displayColor.value = randomColor();
+    color();
 });
 
 buttonNewColor.addEventListener(`keypress`, (e) =>{
     if(e.key === `Enter`){
-        colorBox.style.backgroundColor = randomColor();
-        displayColor.value = randomColor();
+        color();
     }
 });
 
@@ -27,3 +25,8 @@ buttonCopyText.addEventListener(`click`, () =>{
     displayColor.select();
     document.execCommand(`copy`);
 });
+
+const color = function(){
+    colorBox.style.backgroundColor = randomColor();
+    displayColor.value = randomColor();
+};
