@@ -30,3 +30,7 @@ const color = function(){
     colorBox.style.backgroundColor = randomColor();
     displayColor.value = randomColor();
 };
+
+// When you press the new color button, new color will be generated and it will be displayed on a square.
+// You can copy it by pressing the copy button.
+// Colors are displayed in RGB type.
