@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 
 
 const colorBox = document.querySelector(`.color-box`);
