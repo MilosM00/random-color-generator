@@ -7,9 +7,10 @@ const buttonNewColor = document.querySelector(`.new-color`);
 const buttonCopyText = document.querySelector(`.copy-color`);
 
 
+let x;
 const randomNumbers = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
 
-const randomColor = () => `rgb(${randomNumbers(0, 255)}, ${randomNumbers(0, 255)}, ${randomNumbers(0, 255)})`;
+const randomColor = () => x = `rgb(${randomNumbers(0, 255)}, ${randomNumbers(0, 255)}, ${randomNumbers(0, 255)})`;
 
 buttonNewColor.addEventListener(`click`, () =>{
     color();
@@ -27,8 +28,10 @@ buttonCopyText.addEventListener(`click`, () =>{
 });
 
 const color = function(){
-    colorBox.style.backgroundColor = randomColor();
-    displayColor.value = randomColor();
+    randomColor();
+
+    colorBox.style.backgroundColor = x;
+    displayColor.value = x;
 };
 
 // Random Color Generator
